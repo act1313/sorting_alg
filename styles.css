@@ -60,6 +60,7 @@ table {
     padding-left: 20vw;
     padding-right: 20vw;
     text-align: center;
+    align-items: center;
     font-size: 2rem;
 }
 
@@ -67,6 +68,10 @@ table {
     background-color: rgb(64, 64, 64);
     padding: 1vh 1vw 1vh 1vw;
     margin: 1vh 10px 0 10px;
+}
+
+.algorithms:hover {
+    cursor: pointer;
 }
 
 .bottom {
@@ -93,10 +98,39 @@ table {
 
 .sorting {
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sorting_area {
+    width: 75%;
+    height: 75%;
+    background-color: rgb(64, 64, 64);
 }
 
 .sort-btn {
     width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 50%;
+    height: 10%;
+    align-items: center;
+    display: flex;
+}
+
+.sort {
+    width: 100%;
+    height: 100%;
+    color: #04AA6D;
+    background-color: rgb(64, 64, 64);
+    font-weight: bold;
+    font-size: 3rem;
+    box-shadow: none;
 }
 
 #changeSize {
