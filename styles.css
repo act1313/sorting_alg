@@ -107,6 +107,7 @@ table {
     width: 75%;
     height: 75%;
     background-color: rgb(64, 64, 64);
+    position: relative;
 }
 
 .sort-btn {
@@ -155,3 +156,7 @@ table {
     cursor: pointer; /* Cursor on hover */
   }
   
+.bar {
+    background-color: #04AA6D;
+    margin: 0 0 0 0;
+}
