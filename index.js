@@ -120,17 +120,17 @@ async function bubblesort() {
     running = false;
 }
 
-function quicksort(array, start, end) {
+async function quicksort(array, start, end) {
     if (end <= start) {
         return;
     }
 
-    let pivot = partition(array, start, end);
+    let pivot = await partition(array, start, end);
     quicksort(array, start, pivot - 1); // Updated recursive call
     quicksort(array, pivot + 1, end); // Updated recursive call
 }
 
-function partition(array, start, end) {
+async function partition(array, start, end) {
     let bars = sorting_area.children;
 
     let pivot = array[end];
@@ -145,7 +145,7 @@ function partition(array, start, end) {
             let tempchild = bars[i].style.height;
             bars[i].style.height = bars[j].style.height;
             bars[j].style.height = tempchild;
-            
+            await sleep(3000 / bars.length);
         }
     }
     i++;
